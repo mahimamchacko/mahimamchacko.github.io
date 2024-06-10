@@ -44,7 +44,7 @@ export default function Navbar() : React.ReactNode  {
   return (
     <nav className={`flex flex-col md:flex-row justify-between gap-2 p-3 text-zinc-600`}>
       <div className="flex justify-between [&>*]:px-2 md:[&>*]:px-0">
-        <h6 className="font-extrabold text-zinc-700">
+        <h6 className="font-extrabold">
           <Link href="/" draggable={false }>mahima</Link>
         </h6>
         <div className="flex md:hidden items-center">
@@ -57,7 +57,7 @@ export default function Navbar() : React.ReactNode  {
       </div>
       <ul className={`${isToggled ? 'flex flex-col gap-0.5' : 'hidden'} md:flex md:flex-row md:items-end md:gap-1`}>
         {links.map(({ id, link, name }) => (
-          <li key={id} onClick={toggleNavbar} className="px-2 pb-0.5 hover:bg-sky-300 hover:text-white hover:rounded-xl">
+          <li key={id} onClick={toggleNavbar} className="px-2 pb-0.5 text-xl hover:bg-sky-300 hover:text-white hover:rounded-xl">
             <Link href={link} draggable={false}>{name}</Link>
           </li>
         ))}
