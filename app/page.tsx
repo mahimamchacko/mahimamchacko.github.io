@@ -41,7 +41,7 @@ export default function Home() {
         </div>
         <div>
           <p className="font-bold">what's my experience?</p>
-          <p>i have industry experience in full-stack development. by working at susquehanna internation group, drexel university, and west chester area school district, i have been able to figure out what i want to do with my career.</p>
+          <p>i have industry experience in full-stack development. by working at sig, drexel, and wcasd, i have been able to figure out my career goals.</p>
         </div>
         <div>
           <p className="font-bold">what're my projects?</p>
