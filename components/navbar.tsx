@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar() : React.ReactNode  {
   const [isToggled, setIsToggled] = useState(false);
   function toggleNavbar() {
     setIsToggled(!isToggled);
@@ -43,8 +43,10 @@ export default function Navbar() {
 
   return (
     <nav className="flex flex-col md:flex-row justify-between p-3 text-zinc-600">
-      <h1 className="flex justify-between [&>*]:px-2 md:[&>*]:px-0 font-black text-zinc-700">
-        <Link href="/" draggable={false }>mahima</Link>
+      <div className="flex justify-between [&>*]:px-2 md:[&>*]:px-0">
+        <h6 className="font-extrabold text-zinc-700">
+          <Link href="/" draggable={false }>mahima</Link>
+        </h6>
         <div className="flex md:hidden items-center">
           <button onClick={toggleNavbar} className="flex flex-col justify-center items-center [&>*]:block [&>*]:h-1 [&>*]:w-6 [&>*]:bg-zinc-700 [&>*]:rounded-md">
             <span className={isToggled ? 'rotate-45 translate-y-1' : '-translate-y-0.5'} />
@@ -52,10 +54,10 @@ export default function Navbar() {
             <span className={isToggled ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'} />
           </button>
         </div>
-      </h1>
-      <ul className={`${isToggled ? 'block' : 'hidden'} md:flex`}>
+      </div>
+      <ul className={`${isToggled ? 'flex flex-col gap-0.5' : 'hidden'} md:flex md:flex-row md:items-end md:gap-1`}>
         {links.map(({ id, link, name }) => (
-          <li key={id} onClick={toggleNavbar} className="px-2 last:mr-0 pb-0.5 my-1 md:my-0 md:mx-1 hover:bg-sky-300 hover:text-white hover:rounded-xl">
+          <li key={id} onClick={toggleNavbar} className="px-2 pb-0.5 hover:bg-sky-300 hover:text-white hover:rounded-xl">
             <Link href={link} draggable={false}>{name}</Link>
           </li>
         ))}

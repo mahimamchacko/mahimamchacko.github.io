@@ -5,3 +5,27 @@
 body {
   @apply text-xl;
 }
+
+h1 {
+  @apply text-7xl text-zinc-700;
+}
+
+h2 {
+  @apply text-6xl text-zinc-700;
+}
+
+h3 {
+  @apply text-5xl text-zinc-700;
+}
+
+h4 {
+  @apply text-4xl text-zinc-700;
+}
+
+h5 {
+  @apply text-3xl text-zinc-700;
+}
+
+h6 {
+  @apply text-2xl text-zinc-700;
+}
