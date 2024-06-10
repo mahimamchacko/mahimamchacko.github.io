@@ -42,7 +42,7 @@ export default function Navbar() : React.ReactNode  {
   ];
 
   return (
-    <nav className="flex flex-col md:flex-row justify-between p-3 text-zinc-600">
+    <nav className={`flex flex-col md:flex-row justify-between gap-2 p-3 text-zinc-600`}>
       <div className="flex justify-between [&>*]:px-2 md:[&>*]:px-0">
         <h6 className="font-extrabold text-zinc-700">
           <Link href="/" draggable={false }>mahima</Link>
