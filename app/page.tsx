@@ -27,14 +27,27 @@ export default function Home() {
   return (
     <main className="container">
       <h1>mahima chacko</h1>
-      <div className="flex flex-wrap gap-2 my-2">
+      <div className="flex flex-wrap gap-2 mt-3 mb-5">
         {badges.map(({ id, color, text }) => (
           <Badge key={id} color={color}>
             <h6>{text}</h6>
           </Badge>
         ))}
       </div>
-      <p>hi everyone, my name is mahima!</p>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <p className="font-bold">who am i?</p>
+          <p>i'm a software engineering major with a minor in data science at drexel university. i'm passionate about creating innovate solutions to unique problems.</p>
+        </div>
+        <div>
+          <p className="font-bold">what's my experience?</p>
+          <p>i have industry experience in full-stack development. by working at susquehanna internation group, drexel university, and west chester area school district, i have been able to figure out what i want to do with my career.</p>
+        </div>
+        <div>
+          <p className="font-bold">what're my projects?</p>
+          <p>i've acted as the product owner in creating a web app with three other peers at drexel. outside of college, i aspire to learn new tools and technologies.</p>
+        </div>
+      </div>
     </main>
   );
 }
