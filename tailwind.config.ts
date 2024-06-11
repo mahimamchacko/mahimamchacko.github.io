@@ -22,6 +22,9 @@ const config: Config = {
           "xl": "52rem",
           "2xl": "58rem"
         },
+      },
+      fontSize: {
+        "md": [ "1.0625rem", "1.625rem" ]
       }
     },
   },

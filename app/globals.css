@@ -27,5 +27,5 @@ h6 {
 }
 
 body {
-  @apply text-lg text-zinc-600;
+  @apply text-md md:text-lg text-zinc-600;
 }
