@@ -38,7 +38,7 @@ export default function Timeline({ year, color, experiences }: TimelineProps) : 
               <p>{location}</p>
             </div>
           </div>
-          <ul className="list-disc pl-8 md:pl-10 text-base md:text-md">
+          <ul className="list-disc pl-8 md:pl-10 mt-1 text-base md:text-md">
             {bullets.map(({ id, bullet }) => (
               <li key={id}>{bullet}</li>
             ))}
