@@ -25,7 +25,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="container flex flex-col gap-4 py-12">
+    <main className="container flex flex-col gap-4 md:gap-6 py-12">
       <h1>mahima chacko</h1>
       <div className="flex flex-wrap gap-2">
         {badges.map(({ id, color, text }) => (
