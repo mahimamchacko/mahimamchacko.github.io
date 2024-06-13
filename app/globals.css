@@ -31,5 +31,5 @@ body {
 }
 
 .container {
-  @apply py-12;
+  @apply pt-12 pb-20;
 }
