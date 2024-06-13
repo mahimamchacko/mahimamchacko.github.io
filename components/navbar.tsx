@@ -18,26 +18,6 @@ export default function Navbar() : React.ReactNode  {
       id: 2,
       link: "/experience",
       name: "experience"
-    },
-    {
-      id: 3,
-      link: "/projects",
-      name: "projects"
-    },
-    {
-      id: 4,
-      link: "/activities",
-      name: "activities"
-    },
-    {
-      id: 5,
-      link: "/awards",
-      name: "awards"
-    },
-    {
-      id: 6,
-      link: "/contact",
-      name: "contact"
     }
   ];
 
