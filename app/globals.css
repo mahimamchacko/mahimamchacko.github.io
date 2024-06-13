@@ -29,3 +29,7 @@ h6 {
 body {
   @apply text-md md:text-lg text-zinc-600;
 }
+
+.container {
+  @apply py-12;
+}
