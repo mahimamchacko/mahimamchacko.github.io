@@ -1,6 +1,6 @@
 import Timeline from "@/components/timeline";
 
-export default function Home() {
+export default function Experience() {
   const timelines = [
     {
       id: 4,
@@ -178,7 +178,7 @@ export default function Home() {
   ]
 
   return (
-    <div className="container flex flex-col gap-8 md:gap-10">
+    <div className="container flex flex-col gap-8 md:gap-12 py-12">
       <h1>experience</h1>
       <div className="flex flex-col gap-5 md:gap-7">
         {timelines.map(({ id, year, color, experiences }) => (
