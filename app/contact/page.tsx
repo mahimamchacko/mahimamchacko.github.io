@@ -1,5 +1,4 @@
 import Badge from "@/components/badge";
-import Image from "next/image"
 import Link from "next/link";
 
 export default function Contact() {
@@ -31,10 +30,10 @@ export default function Contact() {
         {tabs.map(({ id, title, link, color }) => (
           <div key={id} className="flex gap-8 md:gap-10">
             <Badge color={color}>
-                <Link href={link} draggable={false} className="max-w-48 max-h-48 md:max-w-60 md:max-h-60">
-                  <h6>{title}</h6>
-                </Link>
-              </Badge>
+              <Link href={link} draggable={false} className="max-w-48 max-h-48 md:max-w-60 md:max-h-60">
+                <h6>{title}</h6>
+              </Link>
+            </Badge>
           </div>
         ))}
       </div>

@@ -20,7 +20,12 @@ export default function Navbar() : React.ReactNode  {
       name: "experience"
     },
     {
-      id: 2,
+      id: 3,
+      link: "/projects",
+      name: "projects"
+    },
+    {
+      id: 4,
       link: "/contact",
       name: "contact"
     }
