@@ -1,7 +1,7 @@
 import Card from "@/components/card";
 
 export default function Projects() {
-  const cards = [
+  const projects = [
     {
       id: 1,
       title: "Drexel Catalog Scraper",
@@ -23,7 +23,7 @@ export default function Projects() {
     {
       id: 2,
       title: "Self-Care Sidequests",
-      period: "Jul 2024 - Present",
+      period: "Jan 2022 - Jun 2022",
       description: "A web app to manage daily tasks and improve productivity",
       link: "",
       color: "bg-orange-200",
@@ -40,8 +40,8 @@ export default function Projects() {
   return (
     <main className="container flex flex-col gap-8 md:gap-12 py-12">
       <h1>projects</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {cards.map(({ id, title, period, description, link, color, tags }) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+        {projects.map(({ id, title, period, description, link, color, tags }) => (
           <Card key={id} title={title} period={period} description={description} link={link} color={color} tags={tags}/>
         ))}
       </div>

@@ -180,7 +180,7 @@ export default function Experience() {
   return (
     <div className="container flex flex-col gap-8 md:gap-12 py-12">
       <h1>experience</h1>
-      <div className="flex flex-col gap-5 md:gap-7">
+      <div className="flex flex-col gap-6 md:gap-8">
         {timelines.map(({ id, year, color, experiences }) => (
           <Timeline key={id} year={year} color={color} experiences={experiences}/>
         ))}

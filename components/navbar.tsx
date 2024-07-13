@@ -10,22 +10,22 @@ export default function Navbar() : React.ReactNode  {
   
   const links = [
     {
-      id: 1,
       link: "/",
       name: "about"
     },
     {
-      id: 2,
+      link: "/skills",
+      name: "skills"
+    },
+    {
       link: "/experience",
       name: "experience"
     },
     {
-      id: 3,
       link: "/projects",
       name: "projects"
     },
     {
-      id: 4,
       link: "/contact",
       name: "contact"
     }
@@ -46,9 +46,9 @@ export default function Navbar() : React.ReactNode  {
         </div>
       </div>
       <ul className={`${isToggled ? 'flex flex-col gap-0.5' : 'hidden'} md:flex md:flex-row md:items-end md:gap-1`}>
-        {links.map(({ id, link, name }) => (
-          <li key={id} onClick={toggleNavbar} className="px-2 pb-0.5 text-xl hover:bg-sky-300 hover:text-white hover:rounded-xl">
-            <Link href={link} draggable={false}>{name}</Link>
+        {links.map((item: { link: string, name: string }, index) => (
+          <li key={index} onClick={toggleNavbar} className="px-2 pb-0.5 text-xl hover:bg-sky-300 hover:text-white hover:rounded-xl">
+            <Link href={item.link} draggable={false}>{item.name}</Link>
           </li>
         ))}
       </ul>
