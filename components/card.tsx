@@ -3,6 +3,7 @@ import Badge from "./badge";
 
 type CardProps = {
   title: string,
+  roles: string[],
   period: string
   description: string,
   link: string,
@@ -10,7 +11,7 @@ type CardProps = {
   tags: string[]
 }
 
-export default function Card({ title, period, description, link, color, tags }: CardProps) : React.ReactNode {
+export default function Card({ title, roles, period, description, link, color, tags }: CardProps) : React.ReactNode {
   return (
     <div className="flex flex-col gap-2 shadow-xl p-3 rounded-xl">
       <Badge color={color}>
@@ -18,6 +19,13 @@ export default function Card({ title, period, description, link, color, tags }: 
           <h6>{title}</h6>
         </Link>
       </Badge>
+      <div className="flex flex-wrap gap-1 md:gap-2">
+        {roles.map((role, index) => (
+          <Badge key={index} color="bg-zinc-100">
+            <p>{role}</p>
+          </Badge>
+        ))}
+      </div>
       <Badge color="bg-zinc-100">
         <p>{period}</p>
       </Badge>
