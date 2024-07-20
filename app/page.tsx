@@ -3,22 +3,18 @@ import Badge from "@/components/badge";
 export default function About() {
   const badges = [
     {
-      id: 1,
       color: "bg-emerald-200",
       text: "software developer"
     },
     {
-      id: 2,
       color: "bg-teal-200",
       text: "software engineer"
     },
     {
-      id: 3,
       color: "bg-cyan-200",
       text: "software programmer"
     },
     {
-      id: 4,
       color: "bg-sky-200",
       text: "student"
     },
@@ -28,9 +24,9 @@ export default function About() {
     <main className="container flex flex-col gap-8 md:gap-12 py-12">
       <h1>mahima chacko</h1>
       <div className="flex flex-wrap gap-2">
-        {badges.map(({ id, color, text }) => (
-          <Badge key={id} color={color}>
-            <h6>{text}</h6>
+        {badges.map((tag: { color: string, text: string }, index) => (
+          <Badge key={index} color={tag.color}>
+            <h6>{tag.text}</h6>
           </Badge>
         ))}
       </div>
