@@ -1,6 +1,6 @@
 import Badge from "@/components/badge";
 
-export default function About() {
+export default function GetAbout() {
   const badges = [
     {
       color: "bg-emerald-200",

@@ -1,6 +1,6 @@
 import Card from "@/components/card";
 
-export default function Projects() {
+export default function GetProjects() {
   const projects = [
     {
       title: "Drexel Catalog Viewer",
@@ -10,7 +10,7 @@ export default function Projects() {
       period: "Jul 2024 - Present",
       description: "A web app to view data about courses at Drexel University and visualize prerequisite and corequisite courses in a tree",
       link: "https://github.com/mahimamchacko/drexel-catalog-viewer",
-      color: "bg-sky-200",
+      color: "bg-cyan-200",
       tags: [
         "react",
         "typescript",
@@ -29,7 +29,7 @@ export default function Projects() {
       period: "Jun 2024 - Jul 2024",
       description: "A program to scrape data about courses at Drexel University then clean and store it",
       link: "https://github.com/mahimamchacko/drexel-catalog-scraper",
-      color: "bg-cyan-200",
+      color: "bg-teal-200",
       tags: [
         "python",
         "beautifulsoup4",
@@ -38,23 +38,6 @@ export default function Projects() {
         "venv",
         "mongodb",
         "mongodb compass",
-        "github"
-      ]
-    },
-    {
-      title: "Portfolio",
-      roles: [
-        "Front-End Developer",
-      ],
-      period: "Jun 2024 - Present",
-      description: "A website to display my portfolio",
-      link: "https://github.com/mahimamchacko/mahimamchacko.github.io",
-      color: "bg-teal-200",
-      tags: [
-        "react",
-        "typescript",
-        "nextjs",
-        "tailwind",
         "github"
       ]
     },

@@ -1,6 +1,6 @@
 import Badge from "@/components/badge";
 
-export default function Skills() {
+export default function GetSkills() {
   const skills = [
     {
       label: "languages",

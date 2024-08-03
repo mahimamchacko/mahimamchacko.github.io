@@ -1,17 +1,11 @@
 import Badge from "./badge";
 
-type Bullet = {
-  id: number,
-  bullet: string
-}
-
-type Experience = {
-  id: number,
+export type Experience = {
   title: string,
   company: string,
   period: string,
   location: string,
-  bullets: Bullet[]
+  bullets: string[]
 } 
 
 type TimelineProps = {
@@ -26,21 +20,21 @@ export default function Timeline({ year, color, experiences }: TimelineProps) : 
       <Badge color={color}>
         <h6>{year}</h6>
       </Badge>
-      {experiences.map(({ id, title, company, period, location, bullets }) => (
-        <div key={id}>
+      {experiences.map((experience: { title: string, company: string, period: string, location: string, bullets: string[] }, index) => (
+        <div key={index}>
           <div className="flex flex-col md:flex-row justify-between">
             <div className="flex flex-col items-start">
-              <p className="font-bold">{title}</p>
-              <p className="italic">{company}</p>
+              <p className="font-bold">{experience.title}</p>
+              <p className="italic">{experience.company}</p>
             </div>
             <div className="flex flex-col items-start md:items-end">
-              <p>{period}</p>
-              <p>{location}</p>
+              <p>{experience.period}</p>
+              <p>{experience.location}</p>
             </div>
           </div>
           <ul className="list-disc pl-8 md:pl-10 mt-1 text-base md:text-md">
-            {bullets.map(({ id, bullet }) => (
-              <li key={id}>{bullet}</li>
+            {experience.bullets.map((bullet: string, index) => (
+              <li key={index}>{bullet}</li>
             ))}
           </ul>
         </div>
