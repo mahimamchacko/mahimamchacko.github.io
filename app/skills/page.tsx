@@ -24,7 +24,6 @@ export default function GetSkills() {
         "junit",
         "swagger",
         "entity framework",
-        "jquery",
         "bootstrap",
         "tailwind"
       ]
@@ -59,7 +58,8 @@ export default function GetSkills() {
         "newtonsoft.json",
         "linq",
         "nlog",
-        "csvhelper"
+        "csvhelper",
+        "jquery"
       ]
     },
     {
