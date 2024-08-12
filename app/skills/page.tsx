@@ -19,14 +19,11 @@ export default function GetSkills() {
       label: "frameworks",
       tags: [
         ".net",
-        "asp.net",
-        "nunit",
-        "moq",
+        "asp.net core",
+        "asp.net mvc",
         "junit",
         "swagger",
         "entity framework",
-        "hot chocolate",
-        "strawberry shake",
         "jquery",
         "bootstrap",
         "tailwind"
@@ -38,8 +35,10 @@ export default function GetSkills() {
         "git",
         "visual studio",
         "visual studio code",
-        "bash",
         "intellij",
+        "bash",
+        "rabbitmq",
+        "sql server management studio",
         "oracle sql developer",
         "dbeaver",
         "mongodb compass",
@@ -53,9 +52,14 @@ export default function GetSkills() {
     {
       label: "libraries",
       tags: [
+        "nunit",
+        "moq",
+        "hot chocolate",
+        "strawberry shake",
         "newtonsoft.json",
         "linq",
-        "nlog"
+        "nlog",
+        "csvhelper"
       ]
     },
     {
