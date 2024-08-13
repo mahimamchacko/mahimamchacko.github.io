@@ -25,11 +25,11 @@ export default function GetExperience() {
           period: "Mar 2023 - Sep 2023",
           location: "Bala Cynwyd, PA",
           bullets: [
-            "Enhanced performance and readability by refactoring code and databases across 10+ applications",
-            "Engineered REST APIs utilizing OData to enable advanced querying capabilities in web apps and testing",
-            "Implemented data caching to minimize database calls and improve system performance",
-            "Redesigned external website with content management system to optimize for modification and scalability",
-            "Migrated 12+ web apps between servers and updated them to latest framework versions"
+            "Refactored code and optimized databases across multiple applications to enhance performance and readability",
+            "Engineered REST APIs using OData, enabling advanced querying capabilities and optimizing unit testing",
+            "Implemented data caching with Redis to minimize database queries, achieving an improvement in response times",
+            "Migrated 12+ applications to new servers and updated them to latest framework versions",
+            "Redesigned external website with content management system to optimize for modification and scalability"
           ]
         }
       ]
@@ -44,10 +44,10 @@ export default function GetExperience() {
           period: "Sep 2022 - Mar 2024",
           location: "Philadelphia, PA",
           bullets: [
-            "Delegated tasks each shift and train student assistants to successfully complete responsibilities",
-            "Managed 15-25 support tickets each week with RemedyForce to solve issues with software",
+            "Delegated tasks and trained coworkers to successfully complete responsibilities and strengthen their skills",
+            "Managed 15-25 support tickets each week with RemedyForce, resolving software issues and supporting users",
+            "Crafted clear and concise technical documentation for internal and external audiences, improving software usability",
             "Organized student and faculty events by preparing technical equipment and assembling materials",
-            "Crafted clear and concise technical documentation for internal and external audiences",
             "Maintained reliability of recordings across 40+ classes through monitoring and upkeep of audio-visual technology"
           ]
         },
