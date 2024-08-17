@@ -15,7 +15,7 @@ export default function GetExperience() {
             "Develop a signaling system with RabbitMQ to reliably send messages asynchronously between microservices, significantly enhancing system scalability and decoupling service interactions",
             "Implement concurrency to handle multiple tasks simultaneously, boosting performance and cutting processing time",
             "Construct pipelines to efficiently process large volumes of data from diverse sources, streamlining data flow and facilitating timely data updates",
-            "Engineer and deploy microservices to modularize application architecture, boosting resilience and maintainability",
+            "Engineer and deploy microservices with Docker and Kubernetes to modularize application architecture, boosting resilience and maintainability",
             "Design GraphQL schemas and resolvers to ingest and expose data, improving query flexibility and performance",
             "Reduce maintenance efforts by decommissioning 15+ legacy apps/configurations and automating jobs"
           ]
