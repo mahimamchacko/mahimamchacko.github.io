@@ -8,10 +8,17 @@ export default function GetExperience() {
       experiences: [
         {
           title: "Software Developer",
-          company: "Susquehanna International Group",
+          company: "Susquehanna International Group (SIG)",
           period: "Apr 2024 - Present",
           location: "Bala Cynwyd, PA",
-          bullets: []
+          bullets: [
+            "Develop a signaling system with RabbitMQ to reliably send messages asynchronously between microservices, significantly enhancing system scalability and decoupling service interactions",
+            "Implement concurrency to handle multiple tasks simultaneously, boosting performance and cutting processing time",
+            "Construct pipelines to efficiently process large volumes of data from diverse sources, streamlining data flow and facilitating timely data updates",
+            "Engineer and deploy microservices to modularize application architecture, boosting resilience and maintainability",
+            "Design GraphQL schemas and resolvers to ingest and expose data, improving query flexibility and performance",
+            "Reduce maintenance efforts by decommissioning 15+ legacy apps/configurations and automating jobs"
+          ]
         }
       ]
     },
@@ -21,7 +28,7 @@ export default function GetExperience() {
       experiences: [
         {
           title: "Software Developer",
-          company: "Susquehanna International Group",
+          company: "Susquehanna International Group (SIG)",
           period: "Mar 2023 - Sep 2023",
           location: "Bala Cynwyd, PA",
           bullets: [
@@ -47,8 +54,8 @@ export default function GetExperience() {
             "Delegated tasks and trained coworkers to successfully complete responsibilities and strengthen their skills",
             "Managed 15-25 support tickets each week with RemedyForce, resolving software issues and supporting users",
             "Crafted clear and concise technical documentation for internal and external audiences, improving software usability",
-            "Organized student and faculty events by preparing technical equipment and assembling materials",
-            "Maintained reliability of recordings across 40+ classes through monitoring and upkeep of audio-visual technology"
+            "Coordinated student and faculty events by preparing technical equipment and organizing materials",
+            "Maintained reliability of recordings across 40+ classes by diligently monitoring and maintaining audio-visual technology"
           ]
         },
         {
@@ -57,11 +64,11 @@ export default function GetExperience() {
           period: "Aug 2022 - Sep 2022",
           location: "Remote",
           bullets: [
-            "Participated in seminars to acquire key skills for Product Management and gain insights into the Product Management Life Cycle",
-            "Assessed Product Management prompts by identifying and establishing objectives for each product",
-            "Cultivated a Product Manager mindset by determining priority and value and mastering launch strategy principles",
-            "Analyzed case studies to enhance technologies and optimize effectiveness",
-            "Engaged in discussions with Product Management panelists to explore their roles and perspectives within the field"
+            "Attended seminars to acquire essential Product Management skills and deepen understanding of the Product Management Life Cycle",
+            "Evaluated Product Management scenarios by identifying and defining objectives, ensuring alignment with product goals",
+            "Adopted a Product Manager mindset by prioritizing features and mastering launch strategy principles",
+            "Analyzed case studies to enhance technological solutions and optimize product effectiveness",
+            "Engaged with Product Management panelists to gain insights into their roles and explore diverse perspectives within the field"
           ]
         },
         {
@@ -70,10 +77,10 @@ export default function GetExperience() {
           period: "Mar 2022 - Jun 2022",
           location: "Philadelphia, PA",
           bullets: [
-            "Configured loaner computers by imaging them with SCCM software and deploying them for immediate use",
-            "Enhanced Microsoft Excel spreadsheets by implementing data validation and conditional formatting",
-            "Oversaw computer and accessory loans through asset management using an inventory system",
-            "Employed Microsoft Teams and Discord for effective communication regarding tasks and issues"
+            "Configured loaner computers by imaging them with SCCM software, enabling quick deployment and immediate use",
+            "Optimized Microsoft Excel spreadsheets by integrating data validation and conditional formatting",
+            "Managed asset distribution by overseeing computer and accessory loans, ensuring accurate tracking through an inventory system",
+            "Utilized Microsoft Teams and Discord to effectively coordinate tasks and resolve issues"
           ]
         }
       ]
@@ -88,10 +95,10 @@ export default function GetExperience() {
           period: "May 2021",
           location: "West Chester, PA",
           bullets: [
-            "Updated network infrastructure by constructing and connecting switches in the data center",
-            "Provisioned and labeled 30 wireless access points across schools to facilitate internet access",
-            "Developed PowerShell scripts to monitor changes in group membership within Active Directory and enhance security measures",
-            "Created Ansible playbooks to parse and present data in a more digestible format"
+            "Enhanced network infrastructure by constructing and configuring switches within the data center",
+            "Provisioned and organized 30 wireless access points across schools, improving internet accessibility",
+            "Developed PowerShell scripts to monitor real-time changes in group membership within Active Directory, improving security protocols",
+            "Authored Ansible playbooks to efficiently parse and present date in a more digestible format"
           ]
         }
       ]
