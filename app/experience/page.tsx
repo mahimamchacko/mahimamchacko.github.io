@@ -7,17 +7,17 @@ export default function GetExperience() {
       color: "bg-lime-200",
       experiences: [
         {
-          title: "Software Developer",
-          company: "Susquehanna International Group (SIG)",
+          title: "Software Developer - Instruments",
+          company: "Susquehanna International Group",
           period: "Apr 2024 - Present",
           location: "Bala Cynwyd, PA",
           bullets: [
-            "Develop a signaling system with RabbitMQ to reliably send messages asynchronously between microservices, significantly enhancing system scalability and decoupling service interactions",
-            "Implement concurrency to handle multiple tasks simultaneously, decreasing processing time by 88%",
-            "Construct pipelines to efficiently process large volumes of data from diverse sources, streamlining data flow and facilitating timely data updates",
-            "Engineer and deploy microservices with Docker and Kubernetes to modularize application architecture, boosting resilience and maintainability",
-            "Design GraphQL schemas and resolvers to ingest and expose data, improving query flexibility and performance",
-            "Reduce maintenance efforts by decommissioning 15+ legacy apps/configurations and automating jobs"
+            "Develop a signaling system in C# with RabbitMQ to reliably send messages asynchronously between microservices, significantly enhancing system scalability and decoupling service interactions",
+            "Implement concurrency to process 200k reference data records simultaneously, decreasing overhead by 88%",
+            "Construct pipelines in C# and .NET to efficiently compare large volumes of data from diverse sources, streamlining data flow and facilitating timely data updates using Entity Framework",
+            "Deploy microservices with Docker and Kubernetes to modularize architecture, boosting resilience and uptime",
+            "Develop a .NET service to ingest data and expose it via GraphQL, improving query flexibility and performance",
+            "Build apps to decommission 15+ legacy solutions and automate jobs in Tidal, reducing maintenance efforts"
           ]
         }
       ]
@@ -27,16 +27,17 @@ export default function GetExperience() {
       color: "bg-yellow-200",
       experiences: [
         {
-          title: "Software Developer",
-          company: "Susquehanna International Group (SIG)",
+          title: "Software Developer - Corporate Systems",
+          company: "Susquehanna International Group",
           period: "Mar 2023 - Sep 2023",
           location: "Bala Cynwyd, PA",
           bullets: [
-            "Refactored code and optimized databases across multiple applications to enhance performance and readability",
-            "Engineered REST APIs using OData, enabling advanced querying capabilities and optimizing unit testing",
-            "Implemented data caching with Redis to minimize database queries, achieving an improvement in response times",
-            "Migrated 12+ applications to new servers and updated them to latest framework versions",
-            "Redesigned external website with content management system to optimize for modification and scalability"
+            "Developed a web application using C# and ASP.NET MVC to map and filter 3,000 points in 8 locations",
+            "Engineered REST APIs using Swagger and OData, enabling advanced querying and optimizing unit testing",
+            "Implemented data caching with Redis to minimize database calls, achieving an improvement in response times",
+            "Communicated with stakeholders to maintain and enhance application features based on their requirements",
+            "Redesigned external website with content management system to optimize for modification and scalability",
+            "Created unit tests with NUnit and Moq to ensure code reliability and and improve test coverage"
           ]
         }
       ]
