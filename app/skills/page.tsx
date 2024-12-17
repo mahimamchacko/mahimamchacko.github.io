@@ -13,7 +13,7 @@ export default function GetSkills() {
         "graphql",
         "html",
         "css",
-      ]
+      ],
     },
     {
       label: "frameworks",
@@ -23,8 +23,8 @@ export default function GetSkills() {
         "asp.net mvc",
         "entity framework",
         "bootstrap",
-        "tailwind"
-      ]
+        "tailwind",
+      ],
     },
     {
       label: "tools",
@@ -45,8 +45,8 @@ export default function GetSkills() {
         "atlassian confluence",
         "atlassian fisheye",
         "atlassian crucible",
-        "tidal automation"
-      ]
+        "tidal automation",
+      ],
     },
     {
       label: "libraries",
@@ -61,8 +61,8 @@ export default function GetSkills() {
         "nlog",
         "csvhelper",
         "junit",
-        "jquery"
-      ]
+        "jquery",
+      ],
     },
     {
       label: "databases",
@@ -70,16 +70,16 @@ export default function GetSkills() {
         "microsoft sql server",
         "oracle database",
         "postgresql",
-        "mongodb"
-      ]
-    }
-  ]
+        "mongodb",
+      ],
+    },
+  ];
 
   return (
     <main className="container flex flex-col gap-8 md:gap-12 py-12">
       <h1>skills</h1>
       <ul className="flex flex-col gap-6 md:gap-8">
-        {skills.map((skill: { label: string, tags: string[]}, index) => (
+        {skills.map((skill: { label: string; tags: string[] }, index) => (
           <li key={index} className="flex flex-col gap-2">
             <h6 className="font-bold">{skill.label}</h6>
             <ul className="flex flex-wrap gap-1 md:gap-2">

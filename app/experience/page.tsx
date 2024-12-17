@@ -17,10 +17,10 @@ export default function GetExperience() {
             "Construct pipelines in C# and .NET to efficiently compare large volumes of data from diverse sources, streamlining data flow and facilitating timely data updates using Entity Framework",
             "Deploy microservices with Docker and Kubernetes to modularize architecture, boosting resilience and uptime",
             "Develop a .NET service to ingest data and expose it via GraphQL, improving query flexibility and performance",
-            "Build apps to decommission 15+ legacy solutions and automate jobs in Tidal, reducing maintenance efforts"
-          ]
-        }
-      ]
+            "Build apps to decommission 15+ legacy solutions and automate jobs in Tidal, reducing maintenance efforts",
+          ],
+        },
+      ],
     },
     {
       year: 2023,
@@ -37,10 +37,10 @@ export default function GetExperience() {
             "Implemented data caching with Redis to minimize database calls, achieving an improvement in response times",
             "Communicated with stakeholders to maintain and enhance application features based on their requirements",
             "Redesigned external website with content management system to optimize for modification and scalability",
-            "Created unit tests with NUnit and Moq to ensure code reliability and and improve test coverage"
-          ]
-        }
-      ]
+            "Created unit tests with NUnit and Moq to ensure code reliability and and improve test coverage",
+          ],
+        },
+      ],
     },
     {
       year: 2022,
@@ -56,8 +56,8 @@ export default function GetExperience() {
             "Managed 15-25 support tickets each week with RemedyForce, resolving software issues and supporting users",
             "Crafted clear and concise technical documentation for internal and external audiences, improving software usability",
             "Coordinated student and faculty events by preparing technical equipment and organizing materials",
-            "Maintained reliability of recordings across 40+ classes by diligently monitoring and maintaining audio-visual technology"
-          ]
+            "Maintained reliability of recordings across 40+ classes by diligently monitoring and maintaining audio-visual technology",
+          ],
         },
         {
           title: "Product Management Fellow",
@@ -69,8 +69,8 @@ export default function GetExperience() {
             "Evaluated Product Management scenarios by identifying and defining objectives, ensuring alignment with product goals",
             "Adopted a Product Manager mindset by prioritizing features and mastering launch strategy principles",
             "Analyzed case studies to enhance technological solutions and optimize product effectiveness",
-            "Engaged with Product Management panelists to gain insights into their roles and explore diverse perspectives within the field"
-          ]
+            "Engaged with Product Management panelists to gain insights into their roles and explore diverse perspectives within the field",
+          ],
         },
         {
           title: "IT Support Specialist",
@@ -81,10 +81,10 @@ export default function GetExperience() {
             "Configured loaner computers by imaging them with SCCM software, enabling quick deployment and immediate use",
             "Optimized Microsoft Excel spreadsheets by integrating data validation and conditional formatting",
             "Managed asset distribution by overseeing computer and accessory loans, ensuring accurate tracking through an inventory system",
-            "Utilized Microsoft Teams and Discord to effectively coordinate tasks and resolve issues"
-          ]
-        }
-      ]
+            "Utilized Microsoft Teams and Discord to effectively coordinate tasks and resolve issues",
+          ],
+        },
+      ],
     },
     {
       year: 2021,
@@ -99,20 +99,34 @@ export default function GetExperience() {
             "Enhanced network infrastructure by constructing and configuring switches within the data center",
             "Provisioned and organized 30 wireless access points across schools, improving internet accessibility",
             "Developed PowerShell scripts to monitor real-time changes in group membership within Active Directory, improving security protocols",
-            "Authored Ansible playbooks to efficiently parse and present date in a more digestible format"
-          ]
-        }
-      ]
-    }
-  ]
+            "Authored Ansible playbooks to efficiently parse and present date in a more digestible format",
+          ],
+        },
+      ],
+    },
+  ];
 
   return (
     <div className="container flex flex-col gap-8 md:gap-12 py-12">
       <h1>experience</h1>
       <div className="flex flex-col gap-6 md:gap-8">
-        {timelines.map((timeline: { year: number, color: string, experiences: Experience[] }, index) => (
-          <Timeline key={index} year={timeline.year} color={timeline.color} experiences={timeline.experiences}/>
-        ))}
+        {timelines.map(
+          (
+            timeline: {
+              year: number;
+              color: string;
+              experiences: Experience[];
+            },
+            index
+          ) => (
+            <Timeline
+              key={index}
+              year={timeline.year}
+              color={timeline.color}
+              experiences={timeline.experiences}
+            />
+          )
+        )}
       </div>
     </div>
   );

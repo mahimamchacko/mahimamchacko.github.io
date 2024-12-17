@@ -1,6 +1,6 @@
-import { Urbanist } from 'next/font/google';
- 
+import { Urbanist } from "next/font/google";
+
 export const urbanist = Urbanist({
-  subsets: ['latin'],
-  display: 'swap',
+  subsets: ["latin"],
+  display: "swap",
 });
