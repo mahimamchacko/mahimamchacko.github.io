@@ -1,6 +1,6 @@
 import Badge from "@/components/badge";
 
-export default function GetAbout() {
+function GetAbout() {
   const badges = [
     {
       color: "bg-emerald-200",
@@ -33,3 +33,5 @@ export default function GetAbout() {
     </main>
   );
 }
+
+export default GetAbout;

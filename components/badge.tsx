@@ -3,7 +3,7 @@ type BadgeProps = {
   children: React.ReactNode;
 };
 
-export default function Badge({
+function Badge({
   color = "bg-sky-200",
   children,
 }: BadgeProps): React.ReactNode {
@@ -13,3 +13,5 @@ export default function Badge({
     </div>
   );
 }
+
+export default Badge;

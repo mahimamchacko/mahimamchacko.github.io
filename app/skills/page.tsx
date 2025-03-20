@@ -1,6 +1,6 @@
 import Badge from "@/components/badge";
 
-export default function GetSkills() {
+function GetSkills() {
   const skills = [
     {
       label: "languages",
@@ -8,6 +8,7 @@ export default function GetSkills() {
         "c#",
         "java",
         "python",
+        "typescript",
         "javascript",
         "sql",
         "graphql",
@@ -53,6 +54,7 @@ export default function GetSkills() {
       tags: [
         "nunit",
         "moq",
+        "react",
         "hot chocolate",
         "swagger",
         "strawberry shake",
@@ -95,3 +97,5 @@ export default function GetSkills() {
     </main>
   );
 }
+
+export default GetSkills;

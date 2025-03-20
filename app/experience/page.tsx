@@ -1,6 +1,6 @@
 import Timeline, { Experience } from "@/components/timeline";
 
-export default function GetExperience() {
+function GetExperience() {
   const timelines = [
     {
       year: 2024,
@@ -131,3 +131,5 @@ export default function GetExperience() {
     </div>
   );
 }
+
+export default GetExperience;

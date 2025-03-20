@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
-export default function Navbar(): React.ReactNode {
+function Navbar(): React.ReactNode {
   const [isToggled, setIsToggled] = useState(false);
   function toggleNavbar() {
     setIsToggled(!isToggled);
@@ -80,3 +80,5 @@ export default function Navbar(): React.ReactNode {
     </nav>
   );
 }
+
+export default Navbar;

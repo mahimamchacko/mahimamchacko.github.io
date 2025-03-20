@@ -1,6 +1,6 @@
 import Card from "@/components/card";
 
-export default function GetProjects() {
+function GetProjects() {
   const projects = [
     {
       title: "Salamander",
@@ -99,3 +99,5 @@ export default function GetProjects() {
     </main>
   );
 }
+
+export default GetProjects;

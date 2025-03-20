@@ -1,7 +1,7 @@
 import Badge from "@/components/badge";
 import Link from "next/link";
 
-export default function GetContact() {
+function GetContact() {
   const tabs = [
     {
       title: "email",
@@ -43,3 +43,5 @@ export default function GetContact() {
     </main>
   );
 }
+
+export default GetContact;

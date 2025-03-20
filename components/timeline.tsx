@@ -1,6 +1,6 @@
 import Badge from "./badge";
 
-export type Experience = {
+type Experience = {
   title: string;
   company: string;
   period: string;
@@ -14,7 +14,7 @@ type TimelineProps = {
   experiences: Experience[];
 };
 
-export default function Timeline({
+function Timeline({
   year,
   color,
   experiences,
@@ -57,3 +57,6 @@ export default function Timeline({
     </div>
   );
 }
+
+export default Timeline;
+export type { Experience };

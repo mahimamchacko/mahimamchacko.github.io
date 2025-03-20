@@ -11,7 +11,7 @@ type CardProps = {
   bullets: string[];
 };
 
-export default function Card({
+function Card({
   title,
   roles,
   period,
@@ -56,3 +56,5 @@ export default function Card({
     </div>
   );
 }
+
+export default Card;
