@@ -3,6 +3,32 @@ import Card from "@/components/card";
 function GetProjects() {
   const projects = [
     {
+      title: "Cherry",
+      roles: ["Full-Stack Developer"],
+      period: "Feb 2025 - Mar 2025",
+      link: "https://github.com/mahimamchacko/cherry",
+      color: "bg-sky-200",
+      tags: [
+        "typescript",
+        "html",
+        "css",
+        "reactjs",
+        "sql",
+        "sqlite3",
+        "materialui",
+        "expressjs",
+        "nodejs",
+        "github",
+      ],
+      bullets: [
+        "Collaborated with a team of 2 peers to develop an social-networking web app using ReactJS and NodeJS, enabling users to create events and connect with others",
+        "Engineered scalable RESTful API endpoints with ExpressJS and SQLite3, integrating middleware and routing to optimize backend performance and maintainability",
+        "Implemented token-based authorization to secure the web app, ensuring data protection and controlled user-access",
+        "Created event forms with Material UI and React Hook Form, allowing users to create and edit events seamlessly",
+        "Integrated Google Maps API to display autocomplete suggestions for event locations and retrieve latitude and longitude coordinates, allowing users to easily set event locations and find their distance from the event",
+      ],
+    },
+    {
       title: "Salamander",
       roles: ["Full-Stack Developer"],
       period: "Nov 2024 - Dec 2024",
@@ -24,6 +50,7 @@ function GetProjects() {
         "Collaborated with a team of 2 peers to develop an e-commerce web app using NodeJS and PostgreSQL, enabling users to list auction items and place real-time bids",
         "Engineered scalable RESTful API endpoints with ExpressJS, integrating middleware and routing to optimize backend performance and maintainability",
         "Implemented token-based authorization to secure the web app, ensuring data protection and controlled user-access",
+        "Created item pages, allowing users to view item details and place bids in real-time using WebSockets",
       ],
     },
     {
