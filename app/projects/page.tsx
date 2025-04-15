@@ -3,6 +3,19 @@ import Card from "@/components/card";
 function GetProjects() {
   const projects = [
     {
+      title: "SoundformX",
+      roles: ["Full-Stack Developer"],
+      period: "Sep 2024 - Jun 2025",
+      link: "https://github.com/DP-Coder-11/soundformX",
+      color: "bg-blue-200",
+      tags: ["cpp", "juce", "projucer", "github", "xcode"],
+      bullets: [
+        "Collaborated with a team of 4 peers to develop a cross-platform audio application using C++ and JUCE, enabling users to import audio files, map them to a virtual MIDI keyboard, apply audio manipulations, record samples, and export them as WAV files",
+        "Led the implementation of core components, focusing on a clean architecture and modular design and writing well-documented code to ensure maintainability and scalability",
+        "Developed a virtual MIDI keyboard interface with responsive key highlighting and sound mapping, allowing users to assign audio files to specific keys and play them in real-time with low-latency",
+      ],
+    },
+    {
       title: "Cherry",
       roles: ["Full-Stack Developer"],
       period: "Feb 2025 - Mar 2025",
@@ -19,6 +32,9 @@ function GetProjects() {
         "expressjs",
         "nodejs",
         "github",
+        "visual studio code",
+        "postman",
+        "google maps api",
       ],
       bullets: [
         "Collaborated with a team of 2 peers to develop an social-networking web app using ReactJS and NodeJS, enabling users to create events and connect with others",
@@ -45,6 +61,7 @@ function GetProjects() {
         "expressjs",
         "nodejs",
         "github",
+        "visual studio code",
       ],
       bullets: [
         "Collaborated with a team of 2 peers to develop an e-commerce web app using NodeJS and PostgreSQL, enabling users to list auction items and place real-time bids",
@@ -62,13 +79,14 @@ function GetProjects() {
       tags: [
         "python",
         "sql",
+        "mongodb",
         "beautifulsoup4",
         "requests",
         "pymongo",
         "venv",
-        "mongodb",
         "mongodb compass",
         "github",
+        "visual studio code",
       ],
       bullets: [
         "Developed a web scraper to extract course data from Drexel University in Python and stored it in MongoDB",
