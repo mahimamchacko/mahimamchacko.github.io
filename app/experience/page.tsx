@@ -1,10 +1,10 @@
 import Timeline, { Experience } from "@/components/timeline";
+import Reveal from "@/components/reveal";
 
 function GetExperience() {
   const timelines = [
     {
       year: 2024,
-      color: "bg-lime-200",
       experiences: [
         {
           title: "Software Developer - Instruments",
@@ -24,7 +24,6 @@ function GetExperience() {
     },
     {
       year: 2023,
-      color: "bg-yellow-200",
       experiences: [
         {
           title: "Software Developer - Corporate Systems",
@@ -44,7 +43,6 @@ function GetExperience() {
     },
     {
       year: 2022,
-      color: "bg-orange-200",
       experiences: [
         {
           title: "Senior IT Support Specialist",
@@ -88,7 +86,6 @@ function GetExperience() {
     },
     {
       year: 2021,
-      color: "bg-red-200",
       experiences: [
         {
           title: "IT Intern",
@@ -107,24 +104,20 @@ function GetExperience() {
   ];
 
   return (
-    <div className="container flex flex-col gap-8 md:gap-12 py-12">
+    <div className="container flex flex-col gap-8 md:gap-12 py-16 md:py-24">
       <h1>experience</h1>
       <div className="flex flex-col gap-6 md:gap-8">
         {timelines.map(
           (
-            timeline: {
-              year: number;
-              color: string;
-              experiences: Experience[];
-            },
+            timeline: { year: number; experiences: Experience[] },
             index
           ) => (
-            <Timeline
-              key={index}
-              year={timeline.year}
-              color={timeline.color}
-              experiences={timeline.experiences}
-            />
+            <Reveal key={index} delay={index * 75}>
+              <Timeline
+                year={timeline.year}
+                experiences={timeline.experiences}
+              />
+            </Reveal>
           )
         )}
       </div>
