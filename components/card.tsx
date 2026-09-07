@@ -19,7 +19,7 @@ function Card({
   bullets,
 }: CardProps): React.ReactNode {
   return (
-    <div className="flex flex-col gap-2 p-4 md:p-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 shadow-sm hover:shadow-md hover:border-blue-200 dark:hover:border-blue-500/30 transition-shadow">
+    <div className="flex flex-col gap-2 p-4 md:p-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 shadow-sm hover:shadow-md hover:border-blue-200 dark:hover:border-blue-500/30 motion-safe:hover:-translate-y-0.5 transition-all duration-200">
       <Badge variant="accent">
         <Link
           href={link}

@@ -15,7 +15,7 @@ const roles = [
 function GetAbout() {
   return (
     <main className="container flex flex-col gap-8 md:gap-12 py-16 md:py-24">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 motion-safe:animate-fade-in-up">
         <p className="text-blue-600 dark:text-blue-400 font-semibold uppercase tracking-wide text-sm md:text-base">
           hi, i&apos;m
         </p>
@@ -29,7 +29,7 @@ function GetAbout() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 motion-safe:animate-fade-in-up motion-safe:[animation-delay:150ms]">
         <div className="flex flex-wrap gap-3">
           <Link
             href="/projects"

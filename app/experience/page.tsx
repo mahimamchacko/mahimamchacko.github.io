@@ -1,4 +1,5 @@
 import Timeline, { Experience } from "@/components/timeline";
+import Reveal from "@/components/reveal";
 
 function GetExperience() {
   const timelines = [
@@ -111,11 +112,12 @@ function GetExperience() {
             timeline: { year: number; experiences: Experience[] },
             index
           ) => (
-            <Timeline
-              key={index}
-              year={timeline.year}
-              experiences={timeline.experiences}
-            />
+            <Reveal key={index} delay={index * 75}>
+              <Timeline
+                year={timeline.year}
+                experiences={timeline.experiences}
+              />
+            </Reveal>
           )
         )}
       </div>

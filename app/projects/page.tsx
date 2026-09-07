@@ -1,4 +1,5 @@
 import Card from "@/components/card";
+import Reveal from "@/components/reveal";
 
 function GetProjects() {
   const projects = [
@@ -122,15 +123,16 @@ function GetProjects() {
             },
             index
           ) => (
-            <Card
-              key={index}
-              title={project.title}
-              roles={project.roles}
-              period={project.period}
-              link={project.link}
-              tags={project.tags}
-              bullets={project.bullets}
-            />
+            <Reveal key={index} delay={index * 75}>
+              <Card
+                title={project.title}
+                roles={project.roles}
+                period={project.period}
+                link={project.link}
+                tags={project.tags}
+                bullets={project.bullets}
+              />
+            </Reveal>
           )
         )}
       </div>
